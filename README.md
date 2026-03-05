@@ -1,73 +1,106 @@
-# Welcome to your Lovable project
+<div align="center"><img src="/.github/logotype-dark.png" width="400" title="Happy Coder" alt="Happy Coder"/></div>
 
-## Project info
+<h1 align="center">
+  Mobile and Web Client for Claude Code & Codex
+</h1>
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+<h4 align="center">
+Use Claude Code or Codex from anywhere with end-to-end encryption.
+</h4>
 
-## How can I edit this code?
+<div align="center">
+  
+[📱 **iOS App**](https://apps.apple.com/us/app/happy-claude-code-client/id6748571505) • [🤖 **Android App**](https://play.google.com/store/apps/details?id=com.ex3ndr.happy) • [🌐 **Web App**](https://app.happy.engineering) • [🎥 **See a Demo**](https://youtu.be/GCS0OG9QMSE) • [📚 **Documentation**](https://happy.engineering/docs/) • [💬 **Discord**](https://discord.gg/fX9WBAhyfD)
 
-There are several ways of editing your application.
+</div>
 
-**Use Lovable**
+<img width="5178" height="2364" alt="github" src="/.github/header.png" />
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
 
-Changes made via Lovable will be committed automatically to this repo.
+<h3 align="center">
+Step 1: Download App
+</h3>
 
-**Use your preferred IDE**
+<div align="center">
+<a href="https://apps.apple.com/us/app/happy-claude-code-client/id6748571505"><img width="135" height="39" alt="appstore" src="https://github.com/user-attachments/assets/45e31a11-cf6b-40a2-a083-6dc8d1f01291" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://play.google.com/store/apps/details?id=com.ex3ndr.happy"><img width="135" height="39" alt="googleplay" src="https://github.com/user-attachments/assets/acbba639-858f-4c74-85c7-92a4096efbf5" /></a>
+</div>
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+<h3 align="center">
+Step 2: Install CLI on your computer
+</h3>
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```bash
+npm install -g happy-coder
 ```
 
-**Edit a file directly in GitHub**
+<h3 align="center">
+Run From Source (Repo Checkout)
+</h3>
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```bash
+# from repository root
+yarn cli --help
+yarn cli codex
+```
 
-**Use GitHub Codespaces**
+<h3 align="center">
+Release (Maintainers)
+</h3>
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```bash
+# from repository root
+yarn release
+```
 
-## What technologies are used for this project?
+<h3 align="center">
+Step 3: Start using `happy` instead of `claude` or `codex`
+</h3>
 
-This project is built with:
+```bash
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+# Instead of: claude
+# Use: happy
 
-## How can I deploy this project?
+happy
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+# Instead of: codex
+# Use: happy codex
 
-## Can I connect a custom domain to my Lovable project?
+happy codex
 
-Yes, you can!
+```
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+<div align="center"><img src="/.github/mascot.png" width="200" title="Happy Coder" alt="Happy Coder"/></div>
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## How does it work?
+
+On your computer, run `happy` instead of `claude` or `happy codex` instead of `codex` to start your AI through our wrapper. When you want to control your coding agent from your phone, it restarts the session in remote mode. To switch back to your computer, just press any key on your keyboard.
+
+## 🔥 Why Happy Coder?
+
+- 📱 **Mobile access to Claude Code and Codex** - Check what your AI is building while away from your desk
+- 🔔 **Push notifications** - Get alerted when Claude Code and Codex needs permission or encounters errors  
+- ⚡ **Switch devices instantly** - Take control from phone or desktop with one keypress
+- 🔐 **End-to-end encrypted** - Your code never leaves your devices unencrypted
+- 🛠️ **Open source** - Audit the code yourself. No telemetry, no tracking
+
+## 📦 Project Components
+
+- **[Happy App](https://github.com/slopus/happy/tree/main/packages/happy-app)** - Web UI + mobile client (Expo)
+- **[Happy CLI](https://github.com/slopus/happy/tree/main/packages/happy-cli)** - Command-line interface for Claude Code and Codex
+- **[Happy Agent](https://github.com/slopus/happy/tree/main/packages/happy-agent)** - Remote agent control CLI (create, send, monitor sessions)
+- **[Happy Server](https://github.com/slopus/happy/tree/main/packages/happy-server)** - Backend server for encrypted sync
+
+## 🏠 Who We Are
+
+We're engineers scattered across Bay Area coffee shops and hacker houses, constantly checking how our AI coding agents are progressing on our pet projects during lunch breaks. Happy Coder was born from the frustration of not being able to peek at our AI coding tools building our side hustles while we're away from our keyboards. We believe the best tools come from scratching your own itch and sharing with the community.
+
+## 📚 Documentation & Contributing
+
+- **[Documentation Website](https://happy.engineering/docs/)** - Learn how to use Happy Coder effectively
+- **[CONTRIBUTING.md](CONTRIBUTING.md)** - Development setup including iOS, Android, and macOS desktop variant builds
+- **[Edit docs at github.com/slopus/slopus.github.io](https://github.com/slopus/slopus.github.io)** - Help improve our documentation and guides
+
+## License
+
+MIT License - see [LICENSE](LICENSE) for details.
