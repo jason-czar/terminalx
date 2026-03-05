@@ -2,9 +2,10 @@
     "name": "monorepo",
     "private": true,
     "scripts": {
-        "build": "node -e \"console.log('No workspace build script found for happy-app. Use \\'yarn dev\\' or \\'yarn preview\\' for Lovable preview.')\"",
+        "build": "yarn workspace happy-app build:web",
         "cli": "yarn workspace happy-coder cli",
         "dev": "yarn workspace happy-app web --port 8080",
+        "start": "yarn workspace happy-app serve:web",
         "preview": "yarn workspace happy-app web --port 8080",
         "release": "node ./scripts/release.cjs",
         "web": "yarn workspace happy-app web",
